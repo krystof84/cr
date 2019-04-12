@@ -1,0 +1,19 @@
+// Base
+@import "base/reset";
+@import "base/typography";
+@import "base/global";
+@import "base/variables";
+
+// Vendors
+@import "vendors/slickCarousel";
+@import "vendors/slickCarouselTheme";
+
+// Components
+@import "components/buttons";
+@import "components/header";
+@import "components/navigation";
+@import "components/slider";
+@import "components/footer";
+
+// Pages
+@import "pages/home";
