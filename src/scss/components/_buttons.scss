@@ -1,0 +1,23 @@
+.btn {
+    font-family: 'muliextrabold', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4.9rem 1.5rem 2.8rem;
+    border-radius: 3rem;
+   
+    &--white {
+        border: 2px solid $white;
+        background: $white;
+        color: $accentColor;
+    }
+    &--transparent {
+        border: 2px solid #f0f3f5;
+        color: $white;
+    }
+    &--blue {
+        border: 2px solid $blue;
+        background: $blue;
+        color: $white;
+    }
+}

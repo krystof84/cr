@@ -2,3 +2,40 @@
   box-sizing: border-box
 }
 
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p, 
+ul li, 
+ol li {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-family: 'muliregular', sans-serif;
+  color: $textColor1;
+  margin-bottom: 3.2rem;
+}
+
+ul li {
+  padding-left: 3.6rem;
+
+  &::before {
+    content: "\e900";
+    font-family: 'icomoon';
+    font-size: 1rem;
+    display: inline-block;
+    margin-left: -3.6rem;
+    width: 3.6rem;
+    color: $textLinkColor;
+  }
+}
+
+a {
+  color: $textLinkColor;
+  text-decoration: none;
+}
