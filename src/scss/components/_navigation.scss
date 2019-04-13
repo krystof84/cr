@@ -1,0 +1,51 @@
+.navbar {
+    position: fixed;
+    top: 3.9rem;
+    width: 100%;
+    z-index: 10;
+    display: none;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: auto;
+        img {
+            max-height: 91px;
+        }
+    }
+}
+.navbar-menu {
+    display: flex;
+
+    &__item {
+        margin-right: 8.1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            font-family: 'mulibold', sans-serif;
+            font-size: 1.6rem;
+            line-height: 6rem;
+            color: $white;
+        }
+    }
+}
+
+.navbar-toogle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+        width: 3rem;
+        height: 2px;
+        margin-bottom: 8px;
+        background: $white;
+    }
+}

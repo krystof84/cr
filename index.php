@@ -11,9 +11,30 @@
 </head>
 <body>
 
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo"> 
+            <img src="./src/img/logo-2x.png">
+        </a>
+
+        <div class="navbar-toogle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="navbar-menu">
+            <li class="navbar-menu__item"><a href="#">I stopnia</a></li>
+            <li class="navbar-menu__item"><a href="#">II stopnia</a></li>
+            <li class="navbar-menu__item"><a href="#">Podyplomowe</a></li>
+            <li class="navbar-menu__item"><a href="#">Szkolenia</a></li>
+            <li class="navbar-menu__item"><a href="#">Usługi</a></li>
+        </ul>
+    </div>
+</nav>
+
 <section class="owl-carousel owl-theme" id="slider">
-    <div class="item slide slide">
-        <img src="./src/img/slider.jpg" class="slide__img" alt="Będziesz uczyć się z ciekawością. obiecujemy.">
+    <div class="item slide slide--1">
         <div class="container container--slider">
             <h1 class="slide__heading">
                 Będziesz uczyć się z ciekawością.<br/>
@@ -28,8 +49,7 @@
         </div>
     </div>
 
-    <div class="item slide slide">
-        <img src="./src/img/slider.jpg" class="slide__img" alt="Będziesz uczyć się z ciekawością. obiecujemy.">
+    <div class="item slide slide--2">
         <div class="container container--slider">
             <p class="slide__heading">
                 Będziesz uczyć się z ciekawością.<br/>
@@ -45,7 +65,7 @@
 </section>
 
 <div class="container">
-    <section class="infoSection infoSection--imageRight"> 
+    <section class="infoSection infoSection--1 infoSection--imageRight"> 
         <div class="infoSection__text">
             <h2 class="infoSection__header">Dla kogo?</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere similique hic dolore, numquam doloribus animi consectetur, voluptatum esse nihil nulla quisquam laborum ratione cum fuga ad totam vitae incidunt minus blanditiis voluptates? Tempora dicta aperiam, porro voluptatum dignissimos minus eveniet.</p>
@@ -61,7 +81,7 @@
         </div>
     </section>
 
-    <section class="infoSection infoSection--imageLeft"> 
+    <section class="infoSection infoSection--2 infoSection--imageLeft"> 
         <div class="infoSection__image">
             <img src="./src/img/pic-2.jpg" alt="Po co?">
         </div>
@@ -71,7 +91,7 @@
         </div>
     </section>
 
-    <section class="infoSection infoSection--imageRight"> 
+    <section class="infoSection infoSection--3 infoSection--imageRight"> 
         <div class="infoSection__text">
             <h2 class="infoSection__header">Z kim?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque tenetur ipsum, voluptatem voluptas dolorum inventore, neque perferendis nobis eius, molestias illo at a quod numquam iure est odit? Ab commodi quidem autem labore vero nulla animi, quae nihil repudiandae tenetur dicta atque dolore officiis asperiores quasi quas fugit temporibus.</p>
