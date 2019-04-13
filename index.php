@@ -11,19 +11,19 @@
 </head>
 <body>
 
-<nav class="navbar">
+<nav class="navbar" id="navbar">
     <div class="container">
         <a href="/" class="logo"> 
             <img src="./src/img/logo-2x.png">
         </a>
 
-        <div class="navbar-toogle">
+        <div class="navbar-toogle" id="navbar-toogle">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <ul class="navbar-menu">
+        <ul class="navbar-menu" id="navbar-menu">
             <li class="navbar-menu__item"><a href="#">I stopnia</a></li>
             <li class="navbar-menu__item"><a href="#">II stopnia</a></li>
             <li class="navbar-menu__item"><a href="#">Podyplomowe</a></li>
@@ -33,7 +33,7 @@
     </div>
 </nav>
 
-<section class="owl-carousel owl-theme" id="slider">
+<section class="owl-carousel owl-theme slider" id="slider">
     <div class="item slide slide--1">
         <div class="container container--slider">
             <h1 class="slide__heading">
