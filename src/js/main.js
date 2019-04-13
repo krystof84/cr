@@ -28,3 +28,9 @@ function toggleMenu() {
     });
 }
 toggleMenu();
+
+
+function initMap() {
+
+}
+initMap();

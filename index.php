@@ -103,9 +103,254 @@
     </section>
 </div>
 
+<footer class="mainFooter">
+    <div class="container">
+        <div class="f-1">
+            <address>
+                ul.Głogowska 10<br/>
+                61-719 Poznań<br/>
+                tel. <a href="tel:+48612711000">61 27 11 000</a>
+            </address>
+
+            <div id="map" class="map">
+
+            </div>
+        </div>
+        <div class="f-2">
+            <p class="f-desc">O nas</p>
+            <ul>
+                <li><a href="#">Dlaczego CDV</a></li>
+                <li><a href="#">Kadra naukowa</a></li>
+                <li><a href="#">Dla mediów</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="f-3">
+            <p class="f-desc">Dla kandydata</p>
+            <ul>
+                <li><a href="#">Poradnik maturzysty</a></li>
+                <li><a href="#">Rekrutacja</a></li>
+                <li><a href="#">Kredyt studencki</a></li>
+                <li><a href="#">Studia dla cudzoziemców</a></li>
+            </ul>
+        </div>
+        <div class="f-3">
+            <p class="f-desc">Dla studenta</p>
+            <ul>
+                <li><a href="#">Wirtualna uczelnia</a></li>
+                <li><a href="#">Stypendia</a></li>
+                <li><a href="#">Biuro Karier</a></li>
+                <li><a href="#">Studiuj dalej</a></li>
+            </ul>
+        </div>
+        <div class="f-4">
+            <p class="f-desc">Dla biznesu</p>
+            <ul>
+                <li><a href="#">Współpraca z biznesem</a></li>
+                <li><a href="#">Emotions LAB</a></li>
+                <li><a href="#">Wynajem sal</a></li>
+                <li><a href="#">Znajdź pracownika</a></li>
+            </ul>
+        </div>
+        <div class="f-5">
+            <p class="f-desc">Na skróty</p>
+            <ul>
+                <li><a href="#">Aktualności</a></li>
+                <li><a href="#">Wydarzenia</a></li>
+                <li><a href="#">Konferencje</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <p class="author">Projekt i realizacja: Crafton</p>
+    </div>
+</footer>
+
 <!-- DEV ONLY -->
 <script src="http://crafton.test:35729/livereload.js?snipver=1"></script>
 
+
+<!-- Init map -->
+<script>
+    function initMap() {
+        var options = {
+            center: {lat: 52.4031273, lng: 16.9078014},
+            zoom: 15,
+            disableDefaultUI: true,
+            styles:
+            [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#f5f5f5"
+                    }
+                    ]
+                },
+                {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#616161"
+                    }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                    {
+                        "color": "#f5f5f5"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#bdbdbd"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#eeeeee"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#757575"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#e5e5e5"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#757575"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#dadada"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#616161"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#e5e5e5"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#eeeeee"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#c9c9c9"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                    ]
+                }
+                ]
+        }
+
+        var map = new google.maps.Map(document.getElementById('map'), options);
+        var marker = new google.maps.Marker({
+            position: {
+                lat: 52.4031273,
+                lng: 16.9078014
+            },
+            map: map,
+            icon: 'src/img/map-marker.png'
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn_cjddas_wiDltYSNsUxk-sq5KTCFpgs&callback=initMap" async defer></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="./src/js/owl.carousel.min.js"></script>
 <script src="./src/js/main.js"></script>

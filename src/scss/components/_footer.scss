@@ -1,0 +1,95 @@
+.mainFooter {
+    padding: 8.4rem 0 6.8rem 0;
+    background: $accentColorDarken;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .f-desc {
+        font-family: 'muliextrabold', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+        color: $white;
+        margin-bottom: 2rem;
+    }
+
+    ul li {
+        margin-bottom: 0;
+    }
+
+    ul li a {
+        font-family: 'muliregular', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: $white;
+    }
+    .author {
+        font-family: 'muliregular', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+        color: $white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 0;
+    }
+
+    address,
+    address a {
+        font-family: 'muliregular', sans-serif;
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        color: $white;
+    }
+
+    .map {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 20rem;
+        margin-top: 4.8rem;
+    }
+}
+
+@media(max-width: 991px) {
+    .mainFooter {
+        .container {
+            justify-content: flex-start;
+            > div {
+                width: 33%;
+                margin-top: 3rem;
+            }
+        }
+        .author {
+            bottom: -2rem;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .mainFooter {
+        .container {
+            padding: 0 1.5rem;
+
+            > div {
+                width: 50%;
+                text-align: center;
+                margin-top: 5rem;
+            }
+        }
+
+        .map {
+            margin: 0 auto;
+        }
+
+        .author {
+            position: static;
+            margin-top: 3rem;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
