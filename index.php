@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
     <title>Zadanie rekrutacyjne</title>
     <meta name="description" content="">
 
@@ -102,6 +103,46 @@
         </div>
     </section>
 </div>
+
+<section class="contact">
+        <div class="formContainer">
+
+            <p class="contact-header">Nie znalazłeś opdowiedniego kontaktu?</p>
+            <p class="contact-subheader">Skorzystaj z formularza</p>
+
+            <form action="" class="form" id="form">
+                <div class="form__row">
+                    <div class="form__group">
+                        <input type="email" id="name" class="form__field" placeholder="Imię">
+                        <label for="name" class="form__label">Imię</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" id="surname" class="form__field" placeholder="Nazwisko">
+                        <label for="surname" class="form__label">Nazwisko</label>
+                    </div>
+                </div>
+                
+                <div class="form__group">
+                    <input type="email" id="email" class="form__field form__field--error" placeholder="Your Email">
+                    <label for="email" class="form__label">Adres E-mail</label>
+                </div>
+
+                <div class="form__group">
+                    <textarea id="message" class="form__field" placeholder="Your Message" rows="6"></textarea>
+                    <label for="message" class="form__label">Treść wiadomości</label>
+                </div>
+
+                <div class="form__group">
+                    <label for="agree"><input type="checkbox" name="agree" id="agree" class="form__checkboxAgree"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci deserunt animi accusantium facilis quasi dolor hic, nostrum repellat ut sed quas eaque quidem sunt, sequi ducimus. Enim unde eligendi ex nemo! Sit ad eveniet facere laudantium, quo modi nam molestiae?</label>
+                </div>
+
+                <div class="form__group">
+                    <button type="submit" value="Wyślij" class="form__submit btn btn--blue">Wyślij</button>
+                </div>
+            </form>
+            
+        </div> 
+</section>
 
 <footer class="mainFooter">
     <div class="container">

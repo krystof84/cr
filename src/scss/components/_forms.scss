@@ -1,0 +1,127 @@
+.contact {
+  background: $accentColorLight;
+  padding: 4.2rem 0 5rem 0;
+
+  .formContainer {
+    width: 100%;
+    max-width: 57.9rem;
+    margin: 0 auto;
+  }
+  .contact-header,
+  .contact-subheader {
+    font-family: 'mulisemibold', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .contact-header {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: $textColor1;
+   
+  }
+  .contact-subheader {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    color: $textInputColor;
+    margin-top: -2px;
+  }
+}
+
+
+.form {
+  margin-top: 2.1rem;
+
+  .form__row {
+    display: flex;
+    justify-content: space-between;
+
+    .form__group {
+      width: 47.15%;
+    }
+  }
+  .form__group {
+    position: relative;
+    padding: 2rem 0 0;
+    margin-top: 0;
+  }
+  .form__field {
+    font-family: 'mulisemibold', sans-serif;
+    font-size: 1.5rem;
+    line-height: 3.2rem;
+    color: $accentColor;
+    background: $white;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 2rem 1.4rem 0rem 1.4rem;
+    transition: border-color 0.2s;
+    cursor: pointer;
+    
+    &:focus {
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.07);
+    }
+
+    &--error {
+      border: 1px solid $errorColor;
+      color: $errorColor;
+    }
+  }  
+
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-family: 'muliregular';
+    font-size: 1.5rem;
+    line-height: 3.2rem;
+    color: $textInputColor;
+    cursor: text;
+    top: 2.6rem;
+    left: 1.5rem;
+  }
+  
+  label,
+  .form__field:focus ~ .form__label {
+    font-family: 'mulisemibold', sans-serif;
+    font-size: 1.1rem;
+    line-height: 3.2rem;
+    color: $textInputColor;
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    display: block;
+    transition: 0.2s;
+  }
+  
+  label[for="agree"] {
+    position: static;
+    display: flex;
+    font-family: 'mulisemibold', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: $accentColor;
+    cursor: pointer;
+  }
+
+  .form__checkboxAgree {
+    margin-right: 1rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .contact {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .form .form__row {
+    flex-direction: column;
+
+    .form__group {
+      width: 100%;
+    }
+  }
+}
