@@ -5,15 +5,27 @@
     text-decoration: none;
     padding: 1.5rem 4.9rem 1.5rem 2.8rem;
     border-radius: 3rem;
+    transition: all .3s;
    
     &--white {
         border: 2px solid $white;
         background: $white;
         color: $accentColor;
+
+        &:hover {
+            border-color: $blue;
+            background: $blue;
+            color: $white;
+        }
     }
     &--transparent {
         border: 2px solid #f0f3f5;
         color: $white;
+
+        &:hover {
+            background: $white;
+            color: $accentColor;
+        }
     }
     &--blue {
         border: 2px solid $blue;
@@ -24,6 +36,12 @@
         display: block;
         margin: 0.7rem auto 0 auto;
         cursor: pointer;
+        
+        &:hover {
+            background: transparent;
+            color: $accentColor;
+            border-color: $accentColor;
+        }
     }
 
     @media(max-width: 767px) {

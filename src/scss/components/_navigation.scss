@@ -39,6 +39,11 @@
             font-size: 1.6rem;
             line-height: 6rem;
             color: $white;
+            transition: all .3s;
+
+            &:hover {
+                color: $blue;
+            }
         }
     }
 }

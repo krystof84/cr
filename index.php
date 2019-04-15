@@ -99,7 +99,21 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit error, omnis totam accusantium quibusdam sequi atque officiis rem perferendis voluptates, quidem ab ullam nesciunt fugiat? Esse eaque suscipit autem minima possimus earum et fugit accusamus!</p>
         </div>
         <div class="infoSection__image">
-            <img src="./src/img/pic-3.jpg" alt="Z kim?">
+            <a href="#" class="infoSection__video" id="video1">
+                <img src="./src/img/pic-3.jpg" alt="Z kim?">
+                <img src="./src/img/play.png" alt="Play" class="infoSection__videoPlay">
+            </a>
+        </div>
+
+        <div class="popup">
+            <div class="popup__content">
+                <div class="popup__header">
+                    <a href="#" class="close" id="popup__close"></a>
+                </div>
+                <div>
+                    <iframe id="vid1" src="https://www.youtube.com/embed/nsPQvZm_rgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </section>
 </div>
