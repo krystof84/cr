@@ -79,6 +79,10 @@
     cursor: text;
     top: 2.6rem;
     left: 1.5rem;
+
+    &--error {
+      color: $errorColor;
+    }
   }
   
   label,
@@ -92,6 +96,10 @@
     left: 1.5rem;
     display: block;
     transition: 0.2s;
+
+    &--error {
+      color: $errorColor;
+    }
   }
   
   label[for="agree"] {

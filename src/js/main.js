@@ -29,8 +29,42 @@ function toggleMenu() {
 }
 toggleMenu();
 
+function formValidation() {
+    document.getElementById('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var valid = false;
 
-function initMap() {
+        var emailreg = /\S+@\S+\.\S+/;
+        var email = document.getElementById('email');
+        var inputs = document.getElementsByClassName('form__field');
+
+        for(var i = 0; i < inputs.length; i++) {
+            if(inputs[i].value.trim() == '') {
+                inputs[i].classList.add('form__field--error');
+                inputs[i].nextElementSibling.classList.add('form__label--error');
+            } else {
+                inputs[i].classList.remove('form__field--error');
+                inputs[i].nextElementSibling.classList.remove('form__label--error');
+                valid = true;
+            }
+        }
+        
+        if( !emailreg.test(email.value) ) {
+            email.classList.add('form__field--error');
+            email.nextElementSibling.classList.add('form__label--error');
+            valid = false;
+        } else {
+            email.classList.remove('form__field--error');
+            email.nextElementSibling.classList.remove('form__label--error');
+            valid = true;
+        }
+
+        if(valid) {
+            this.submit();
+        }
+
+    });
+
 
 }
-initMap();
+formValidation();

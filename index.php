@@ -113,17 +113,17 @@
             <form action="" class="form" id="form">
                 <div class="form__row">
                     <div class="form__group">
-                        <input type="email" id="name" class="form__field" placeholder="Imię">
+                        <input type="text" id="name" class="form__field" placeholder="Imię">
                         <label for="name" class="form__label">Imię</label>
                     </div>
                     <div class="form__group">
-                        <input type="email" id="surname" class="form__field" placeholder="Nazwisko">
+                        <input type="text" id="surname" class="form__field" placeholder="Nazwisko">
                         <label for="surname" class="form__label">Nazwisko</label>
                     </div>
                 </div>
                 
                 <div class="form__group">
-                    <input type="email" id="email" class="form__field form__field--error" placeholder="Your Email">
+                    <input type="text" id="email" class="form__field" placeholder="Your Email">
                     <label for="email" class="form__label">Adres E-mail</label>
                 </div>
 
@@ -140,7 +140,7 @@
                     <button type="submit" value="Wyślij" class="form__submit btn btn--blue">Wyślij</button>
                 </div>
             </form>
-            
+
         </div> 
 </section>
 
